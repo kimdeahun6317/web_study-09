@@ -9,6 +9,8 @@ CREATE TABLE member(
 	PRIMARY KEY (userid)
 );
 
+ALTER TABLE MEMBER MODIFY (name varchar2(20)); 
+
 DROP TABLE MEMBER;
 
 SELECT * FROM MEMBER;
