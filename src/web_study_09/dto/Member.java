@@ -3,6 +3,7 @@ package web_study_09.dto;
 import java.util.Date;
 
 public class Member {
+
 	private String name;
 	private String userId;
 	private String pwd;
@@ -10,20 +11,16 @@ public class Member {
 	private String phone;
 	private int admin;
 	private Date joinDate;
-
+	
 	public Member() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Member(String userId) {
-		super();
 		this.userId = userId;
 	}
-	
 
 	public Member(String name, String userId, String pwd, String email, String phone, int admin) {
-		super();
 		this.name = name;
 		this.userId = userId;
 		this.pwd = pwd;
@@ -31,9 +28,8 @@ public class Member {
 		this.phone = phone;
 		this.admin = admin;
 	}
-
+	
 	public Member(String name, String userId, String pwd, String email, String phone, int admin, Date joinDate) {
-		super();
 		this.name = name;
 		this.userId = userId;
 		this.pwd = pwd;
@@ -101,8 +97,8 @@ public class Member {
 
 	@Override
 	public String toString() {
-		return "Member [name=" + name + ", userId=" + userId + ", pwd=" + pwd + ", email=" + email + ", phone=" + phone
-				+ ", admin=" + admin + ", joinDate=" + joinDate + "]";
+		return String.format("Member [name=%s, userId=%s, pwd=%s, email=%s, phone=%s, admin=%s, joinDate=%s]", name,
+				userId, pwd, email, phone, admin, joinDate);
 	}
-
+	
 }
